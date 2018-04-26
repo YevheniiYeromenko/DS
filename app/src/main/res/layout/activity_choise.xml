@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiseActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#141414">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="24dp">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Denis Semenikhin"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:textColor="#A23820"
+            android:textStyle="italic"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/bTraining"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:textSize="40dp"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:text="@string/training"
+            android:layout_marginBottom="24dp"
+            android:background="#A23820"
+            android:textColor="#F3F3F1"/>
+
+        <Button
+            android:id="@+id/bNutrition"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:text="@string/nutrition"
+            android:background="#A23820"
+            android:textColor="#F3F3F1"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
