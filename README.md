@@ -1,5 +1,5 @@
-## DS application
-# https://www.youtube.com/channel/UCnEEkiWWRG5mfgEN3UE7Rjg
+# DS application
+https://www.youtube.com/channel/UCnEEkiWWRG5mfgEN3UE7Rjg
 
 ![screenshot_2018-04-26-15-32-35](https://user-images.githubusercontent.com/35934803/39675472-197a85d8-5164-11e8-9230-1f64dff783ab.png)
 ![screenshot_2018-04-26-15-32-52](https://user-images.githubusercontent.com/35934803/39675473-19b6ab80-5164-11e8-857f-db863cf66e25.png)
