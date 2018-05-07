@@ -1,6 +1,9 @@
 package com.example.bicher.ds;
 
 import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.CountDownTimer;
+import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +19,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.lang.ref.WeakReference;
+
 public class MainActivity extends AppCompatActivity {
 
     /*private FirebaseAuth mAuth;
@@ -25,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     private Button bRegistration;
     private Button bSignOut;*/
 
+    //private boolean start = false;
+    //private MyAsyncTask asyncTask;
+
 
 
     @Override
@@ -32,10 +40,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //new MyAsyncTask().execute();
 
-        Intent intent = new Intent(getApplicationContext(), ChoiseActivity.class);
-        startActivity(intent);
+        CountDownTimer countDownTimer = new CountDownTimer(2000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
 
+            }
+
+            @Override
+            public void onFinish() {
+                Intent intent = new Intent(getApplicationContext(), ChoiseActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }.start();
+
+
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                SystemClock.sleep(1000);
+//                Intent intent = new Intent(getApplicationContext(), ChoiseActivity.class);
+//                startActivity(intent);
+//                finish();
+//
+//            }
+//        }).start();
+
+
+        //Intent intent = new Intent(getApplicationContext(), ChoiseActivity.class);
+        //if (start) {
+            //SystemClock.sleep(2000);
+            //startActivity(intent);
+        //}
         //Переход на окно выбора
 
         ////////////////////
@@ -101,4 +139,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }*/
     }
-}
+
+    }
+
