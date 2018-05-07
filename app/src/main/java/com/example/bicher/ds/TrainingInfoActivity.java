@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -50,9 +51,6 @@ public class TrainingInfoActivity extends AppCompatActivity {
         customRVInfoAdapter = new CustomRVInfoAdapter();
 
 
-
-
-
         final TrainingProgram program = getIntent().getParcelableExtra("TR_PROGRAM");
         tvTrainingName.setText(program.getName());
         exerciseList = program.getProgramList();
@@ -70,11 +68,21 @@ public class TrainingInfoActivity extends AppCompatActivity {
         String s1 = youtubeVideoUri.substring(youtubeVideoUri.length() - 11);
         Log.wtf("TrainingInfoActivity", s1);
 
+//        App.getInstancePicasso(this)
+//            .load(s + s1 +"/mqdefault.jpg")
+//            .placeholder(R.drawable.ic_launcher_background)
+//            .into(imYoutube);
 
-        Picasso.with(this)
+//        Picasso.with(this)
+//            .load(s + s1 +"/mqdefault.jpg")
+//            .placeholder(R.drawable.ic_launcher_background)
+//            .into(imYoutube);
+
+        Glide.with(this)
             .load(s + s1 +"/mqdefault.jpg")
-            .placeholder(R.drawable.ic_launcher_background)
+            //.placeholder(R.drawable.ic_launcher_background)
             .into(imYoutube);
+
 
         imYoutube.setOnClickListener(new View.OnClickListener() {
             @Override

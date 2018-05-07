@@ -137,7 +137,7 @@ public class TrainingActivity extends BaseActivity {
         for (int i = 0; i < fireBaseListMain.size(); i++) {
             listForCash.add(new TrainingProgram(
                 nameList.get(i),
-                3,
+                //3,
                 imageUrlList.get(i),
                 youtubeUriList.get(i),
                 exerciseList.get(i)));

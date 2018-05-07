@@ -18,13 +18,13 @@
             android:textSize="32sp"
             android:textColor="#F3F3F1"/>
 
-        <RatingBar
+        <!--<RatingBar
             android:id="@+id/rbRaiting"
             style="@android:style/Widget.Holo.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:numStars="5"
-            android:visibility="visible"/>
+            android:visibility="visible"/>-->
             <!--android:focusableInTouchMode="false"-->
             <!--android:focusable="false"-->
             <!--/>-->

@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -53,19 +54,29 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         public CustomViewHolder(View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tvName);
-            rbRaiting = itemView.findViewById(R.id.rbRaiting);
+            //rbRaiting = itemView.findViewById(R.id.rbRaiting);
             imPhoto = itemView.findViewById(R.id.imPhoto);
         }
 
         public void bind(TrainingProgram program, Context context){
             tvName.setText(program.getName());
-            rbRaiting.setRating(program.getRaiting());
-            rbRaiting.setFocusable(false);
+            //rbRaiting.setRating(program.getRaiting());
+            //rbRaiting.setFocusable(false);
             //imPhoto.setBackgroundColor(Color.rgb(255,0,0));
 
-            Picasso.with(context)
+//            App.getInstancePicasso(context)
+//                .load(program.getImageUrl())
+//                .placeholder(R.drawable.ic_launcher_background)
+//                .into(imPhoto);
+
+//            Picasso.with(context)
+//                .load(program.getImageUrl())
+//                .placeholder(R.drawable.ic_launcher_background)
+//                .into(imPhoto);
+
+            Glide.with(context)
                 .load(program.getImageUrl())
-                .placeholder(R.drawable.ic_launcher_background)
+                //.placeholder(R.drawable.ic_launcher_background)
                 .into(imPhoto);
         }
 

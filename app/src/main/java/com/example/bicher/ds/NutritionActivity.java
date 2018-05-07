@@ -90,7 +90,7 @@ public class NutritionActivity extends BaseActivity {
         for (int i = 0; i < fireBaseListMain.size(); i++) {
             listForCash.add(new TrainingProgram(
                 nameList.get(i),
-                0,
+                //0,
                 imageUrlList.get(i),
                 youtubeUriList.get(i),
                 rationList.get(i)));
